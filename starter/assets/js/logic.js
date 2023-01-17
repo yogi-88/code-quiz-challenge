@@ -58,4 +58,36 @@ function getQuestion() {
     });
 }
 
+function questionClick() {
+    //check if user guessed wrong
+    if (this.value !== questions[currentQuestionIndex].answer) {
+        // penalize time
+        time -= 10;
+
+        if (time < 0) {
+            time = 0;
+        }
+        //display new time on page
+        timerEl.textContent = time;
+        feedbackEl.textContent = "Wrong";
+        feedbackEl.getElementsByClassName.color = "red";
+        feedbackEl.getElementsByClassName.fontSize = "400%";
+
+        // flash right/wrong feedback
+        feedbackEl.setAttribute("class", "feedback");
+        setTimeout(function() {
+            feedbackEl.setAttribute("class", "feedback hide");
+        }, 1000);
+
+        //next question
+        currentQuestionIndex++;
+
+        //time checker
+        if (currentQuestionIndex === questions.length) {
+            quizEnd();
+        } else {
+            getQuestion();
+        }
+    }
+}
 
