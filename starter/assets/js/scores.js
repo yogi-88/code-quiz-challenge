@@ -18,3 +18,13 @@ function printHighscores() {
 
     });
 }
+
+function clearHighScore () {
+    window.localStorage.removeItem("highScores");
+    window.location.reload();
+}
+
+document.getElementById("clear").onclick = clearHighScore;
+
+//run function when page loads
+printHighscores();
