@@ -102,3 +102,14 @@ function quizEnd() {
     //hide questions section
     questionsEl.setAttribute("class", "hide");
 }
+
+function clockTick() {
+    //update time
+    time--;
+    timerEl.textContent = time;
+
+    //check if user ran out of time
+    if (time <= 0) {
+        quizEnd();
+    }
+}
