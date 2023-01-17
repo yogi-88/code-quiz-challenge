@@ -113,3 +113,26 @@ function clockTick() {
         quizEnd();
     }
 }
+
+function saveHighScore() {
+    //get value of input box
+    var initials = initialsEl.value.trim();
+
+    if (initials !== "") {
+        //get saved scored fro local storage, or if not any, set to empty array
+        var highScores = JSON.parse(window.localStorage.getItem("highScores")) || [];
+
+        // format new score object for current user
+        var newScore = {
+            score: time,
+            initials: initials
+        };
+
+        //save to local storage
+        highScores.push(newScore);
+        window.localStorage.setItem("highScores", JSON.stringify(highScores));
+
+        // redirect to next page
+        window.location.href = "score.html";
+    }
+}
