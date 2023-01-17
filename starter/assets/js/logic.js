@@ -136,3 +136,8 @@ function saveHighScore() {
         window.location.href = "score.html";
     }
 }
+function checkForEnter(event) {
+    if (event.key === "Enter") {
+        saveHighScore();
+    }
+}
