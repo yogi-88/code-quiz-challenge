@@ -35,6 +35,6 @@ HTML, CSS, Javascript, DOM
 
 ### Screenshots
 Screenshare of Code-quiz challenge
-![video of Code-quiz](./assets/Password%20Generator%20-%20Google%20Chrome%202023-01-10%2016-36-53.mp4)
-![Image of Code-quiz challenge](./assets/Password-generator.PNG)
+![video of Code-quiz](./assets/Coding%20Quiz%20-%20Google%20Chrome%202023-01-18%2000-01-23.mp4)
+
 
