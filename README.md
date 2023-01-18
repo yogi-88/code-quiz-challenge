@@ -28,7 +28,8 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 ### Submission
-Deployed Link :
+Deployed Link : https://yogi-88.github.io/code-quiz-challenge/
+
 
 ### Technologies used
 HTML, CSS, Javascript, DOM
